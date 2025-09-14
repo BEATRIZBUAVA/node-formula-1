@@ -1,0 +1,22 @@
+{
+  "name": "minimal-api-formula-1",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "@fastify/cors": "^11.1.0",
+    "dotenv": "^17.2.2",
+    "fastify": "^5.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.4.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  },
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only server.ts",
+    "start": "node dist/server.js",
+    "build": "tsc"
+  }
+}
